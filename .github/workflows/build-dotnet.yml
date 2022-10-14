@@ -16,10 +16,10 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore Dependencies
       run: |
-           dotnet restore DemoApp/Client/src/to/Client.csproj
-           dotnet restore DemoApp/Server/src/to/Server.csproj
+           dotnet restore DemoApp/Client/src/Client.csproj
+           dotnet restore DemoApp/Server/src/Server.csproj
     - name: Build
       run: |           
-            dotnet build DemoApp/Client/src/to/Client.csproj
-            dotnet build DemoApp/Server/src/to/Server.csproj
+            dotnet build DemoApp/Client/src/Client.csproj
+            dotnet build DemoApp/Server/src/Server.csproj
         
