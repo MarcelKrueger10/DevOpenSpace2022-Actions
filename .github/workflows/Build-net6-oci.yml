@@ -53,5 +53,5 @@ jobs:
       with:
         context: ./DemoApp/Server
         push: true
-        tags: ${{ steps.meta.outputs.labels }}
+        tags: ${{ steps.meta.outputs.tags}}
       
