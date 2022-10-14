@@ -1,0 +1,13 @@
+name: demo-6
+on:
+  push:
+    branches: [ main ]
+jobs:
+  echo-parameter:
+    runs-on: ubuntu-lastest
+    steps:
+    - name: step one
+      id: step-1
+      run: echo "::set-output name=my_field::My Value Is 42"
+    - name: step two
+      run: echo "my out value ist ${{ steps.step-1.outputs.my_field }}"
